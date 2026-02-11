@@ -35,7 +35,7 @@ pipeline {
 
     post {
         success {
-            echo "✅ Deployment successful! Access your app at http://${EC2_HOST}:8080/webapp"
+            echo "✅ Deployment is successful! Access your app at http://${EC2_HOST}:8080/webapp"
         }
         failure {
             echo "❌ Deployment failed. Check Jenkins logs."
