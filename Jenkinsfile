@@ -1,7 +1,7 @@
 @Library('jenkins-shared-lib') _
 
 pipeline {
-    agent any
+    agent { label 'ec2-agent' } // run on your EC2 agent
 
     environment {
         EC2_HOST = "100.31.157.122"
